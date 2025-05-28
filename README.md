@@ -24,6 +24,7 @@ A simplified MIPS-like processor implemented in Verilog with a single-cycle desi
 - `inst_mem.mem`: Sample instructions.  
 - `PC.v`: Program counter.  
 - `Register_Memory.v`: 32-register file.
+- `IITK_mini_MIPS.pdf`: problem statement.
 
 ---
 

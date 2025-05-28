@@ -119,9 +119,9 @@ ALU compares `alu_inp_a` (from `r1_out`) and `alu_inp_b` (from `r2_out`), and th
 
 - **Tools**: Verilog simulator (e.g., ModelSim) or FPGA tool (e.g., Vivado).  
 - **Steps**:
-Place all files in one directory
-Use the assembler to convert assembly to machine code if needed
-Simulate with a testbench or synthesize for FPGA
+  1. Place all files in one directory.
+  2. Use the assembler to convert assembly to machine code if needed.
+  3. Simulate with a testbench or synthesize for FPGA.
 
 ---
 

@@ -211,25 +211,20 @@ module Processor(
         .CU_op(CU_op)
     );
 
-    // always @(*) begin
-    //     if(inst_load == 1'b1) begin
-    //         we_i_mem <= 1'b1;
-    //     end
-    //     else begin
-    //         we_i_mem <= 1'b0;
-    //     end
+    always @(*) begin
+        if(inst_load == 1'b1) begin
+            we_i_mem <= 1'b1;
+        end
+        else begin
+            we_i_mem <= 1'b0;
+        end
 
-    //     if(data_load == 1'b1 || CU_op == 4'b0110) begin
-    //        we_d_mem <= 1'b1;
-    //     end
-    //     else begin
-    //         we_d_mem <= 1'b0;
-    //     end
-    // end
-    always @(posedge clk) begin
-    we_i_mem <= inst_load;
-    we_d_mem <= (data_load || CU_op == 4'b0110);
+        if(data_load == 1'b1 || CU_op == 4'b0110) begin
+           we_d_mem <= 1'b1;
+        end
+        else begin
+            we_d_mem <= 1'b0;
+        end
     end
-
-
+    
 endmodule

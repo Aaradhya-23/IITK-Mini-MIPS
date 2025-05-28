@@ -118,3 +118,13 @@ ALU compares `alu_inp_a` (from `r1_out`) and `alu_inp_b` (from `r2_out`), and th
 
 - **Tools**: Verilog simulator (e.g., ModelSim) or FPGA tool (e.g., Vivado).  
 - **Steps**: Place files in one directory, simulate with a testbench, or synthesize for FPGA.
+
+---
+
+## Course
+CS220 - Introduction To Computer Hardware
+
+---
+
+## Professor
+Debapriya Basu Roy
